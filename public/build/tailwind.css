@@ -198,6 +198,12 @@ th {
 .z-50 {
     z-index: 50;
 }
+.col-span-1 {
+    grid-column: span 1 / span 1;
+}
+.col-span-4 {
+    grid-column: span 4 / span 4;
+}
 .m-8 {
     margin: 2rem;
 }
@@ -231,6 +237,9 @@ th {
 }
 .flex {
     display: flex;
+}
+.grid {
+    display: grid;
 }
 .hidden {
     display: none;
@@ -279,6 +288,24 @@ th {
 .resize {
     resize: both;
 }
+.grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.grid-cols-\[200px_minmax\(900px\2c _1fr\)_100px\] {
+    grid-template-columns: 200px minmax(900px, 1fr) 100px;
+}
+.grid-cols-\[200px_100px\] {
+    grid-template-columns: 200px 100px;
+}
+.grid-cols-\[200px_1fr_100px\] {
+    grid-template-columns: 200px 1fr 100px;
+}
+.grid-cols-\[100px_1fr_100px\] {
+    grid-template-columns: 100px 1fr 100px;
+}
+.grid-cols-\[150px_1fr_100px\] {
+    grid-template-columns: 150px 1fr 100px;
+}
 .flex-wrap {
     flex-wrap: wrap;
 }
@@ -294,6 +321,9 @@ th {
 .gap-4 {
     gap: 1rem;
 }
+.gap-8 {
+    gap: 2rem;
+}
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -303,6 +333,9 @@ th {
     --tw-space-y-reverse: 0;
     margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+.justify-self-end {
+    justify-self: end;
 }
 .overflow-hidden {
     overflow: hidden;
@@ -350,6 +383,22 @@ th {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
+.px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
 .font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -367,8 +416,18 @@ th {
     font-size: 0.75rem;
     line-height: 1rem;
 }
+.text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
 .font-bold {
     font-weight: 700;
+}
+.font-medium {
+    font-weight: 500;
+}
+.font-semibold {
+    font-weight: 600;
 }
 .tracking-wide {
     letter-spacing: 0.025em;
@@ -547,6 +606,11 @@ th {
     .md\:bg-orange-500 {
         --tw-bg-opacity: 1;
         background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+    }
+
+    .md\:px-0 {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 @media (min-width: 1024px) {
