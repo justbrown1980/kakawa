@@ -25,7 +25,7 @@
 
   <div class="bg-black whitespace-nowrap overflow-hidden py-2 text-sm">
     <header class="container flex justify-between items-center text-white mx-auto max-w-[1360px] container--large">
-      <div class="flex items-center">
+      <div class="scroll-content flex items-center">
         <svg class="size-5 mr-2" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M11.3984 3.10004H15.2984C15.988 3.10004 16.6493 3.37396 17.1369 3.86156C17.6245 4.34915 17.8984 5.01047 17.8984 5.70003V10.9H15.9484"
@@ -44,7 +44,7 @@
         <span>Free Shipping Over $150</span>
       </div>
   
-      <div class="flex items-center">
+      <div class="scroll-content flex items-center">
         <svg class="size-5 mr-2" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M10.1328 16.9997C9.45321 16.9997 8.9023 16.4484 8.9023 15.7684C8.9023 15.0883 9.45321 14.537 10.1328 14.537C10.8124 14.537 11.3633 15.0883 11.3633 15.7684C11.3633 16.4484 10.8124 16.9997 10.1328 16.9997Z"
@@ -67,7 +67,7 @@
         <span>Same Day & Express Delivery Available</span>
       </div>
   
-      <div class="flex items-center">
+      <div class="scroll-content flex items-center">
         <span class="icon">
           <svg class="size-5 mr-2" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -83,7 +83,7 @@
         </span> <span>Click & Collect</span>
       </div>
   
-      <div class="flex items-center">
+      <div class="scroll-content flex items-center">
         <svg class="size-5 mr-2" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M7.40039 0.5V4.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
           <path d="M8.90039 11H11.4004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -103,14 +103,14 @@
   @media (max-width: 1024px) {
     .container--large {
       display: flex;
-      gap: 2rem; /* Adjust this value for spacing between items */
-      white-space: nowrap;
+      gap: 2rem;
       overflow: hidden;
+      white-space: nowrap;
     }
   
     .scroll-content {
       display: flex;
-      gap: 2rem; /* Adjust this value for spacing between items */
+      gap: 2rem;
     }
   }
   </style>
@@ -118,19 +118,16 @@
   <script>
   document.addEventListener('DOMContentLoaded', function() {
     const container = document.querySelector('.container--large');
-    const scrollContent = document.createElement('div');
-    scrollContent.className = 'scroll-content';
-    scrollContent.innerHTML = container.innerHTML;
-    container.appendChild(scrollContent);
+    const scrollContents = document.querySelectorAll('.scroll-content');
   
     function startScroll() {
       if (window.innerWidth <= 1024) {
         container.scrollLeft = 0;
-        const scrollSpeed = 1.2; // Adjust scroll speed as needed
+        const scrollSpeed = 1; // Adjust scroll speed as needed
   
         function scroll() {
           container.scrollLeft += scrollSpeed;
-          if (container.scrollLeft >= scrollContent.scrollWidth) {
+          if (container.scrollLeft >= scrollContents[0].scrollWidth) {
             container.scrollLeft = 0;
           }
           requestAnimationFrame(scroll);
@@ -145,17 +142,42 @@
   </script>
   
 
-<div>
-  <header class="mx-auto grid grid-cols-6 container px-2">
-    <div class="col-span-1">LOGO</div>
-    <div class="col-span-4 justify-self-end"->NAV</div>
-    <div class="col-span-1 justify-self-end">CART</div>
 
-  </header>
-</div>
+  <div>
+    <header class="mx-auto grid grid-cols-6 container px-2">
+      <div class="col-span-1">LOGO</div>
+      <div class="col-span-4 justify-self-end" ->NAV</div>
+      <div class="col-span-1 justify-self-end">
+        <ul class="flex items-center gap-4">
+          <li>
+            <a href="#" class="no-underline">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="no-underline">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+              </svg>
+              (2)
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </header>
+  </div>
 
 
-  
-  
+
+
 </body>
+
 </html>

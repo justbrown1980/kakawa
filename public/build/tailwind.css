@@ -203,6 +203,10 @@ th {
     width: 1.25rem;
     height: 1.25rem;
 }
+.size-6 {
+    width: 1.5rem;
+    height: 1.5rem;
+}
 .h-14 {
     height: 3.5rem;
 }
@@ -283,6 +287,9 @@ th {
 .justify-around {
     justify-content: space-around;
 }
+.gap-4 {
+    gap: 1rem;
+}
 .justify-self-end {
     justify-self: end;
 }
@@ -353,6 +360,9 @@ th {
 .text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.no-underline {
+    text-decoration-line: none;
 }
 .antialiased {
     -webkit-font-smoothing: antialiased;
