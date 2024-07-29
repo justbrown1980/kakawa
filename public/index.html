@@ -24,7 +24,7 @@
 
 
   <div class="bg-black whitespace-nowrap overflow-hidden py-2 text-sm">
-    <header class="container flex justify-between items-center text-white mx-auto container--large px-2">
+    <header class="container flex justify-between items-center text-white mx-auto max-w-[1360px] container--large">
       <div class="flex items-center">
         <svg class="size-5 mr-2" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -103,21 +103,47 @@
   @media (max-width: 1024px) {
     .container--large {
       display: flex;
-      gap: 2rem;
-      animation: scroll 15s linear infinite;
+      gap: 2rem; /* Adjust this value for spacing between items */
       white-space: nowrap;
+      overflow: hidden;
     }
   
-    @keyframes scroll {
-      0% {
-        transform: translateX(100%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
+    .scroll-content {
+      display: flex;
+      gap: 2rem; /* Adjust this value for spacing between items */
     }
   }
   </style>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const container = document.querySelector('.container--large');
+    const scrollContent = document.createElement('div');
+    scrollContent.className = 'scroll-content';
+    scrollContent.innerHTML = container.innerHTML;
+    container.appendChild(scrollContent);
+  
+    function startScroll() {
+      if (window.innerWidth <= 1024) {
+        container.scrollLeft = 0;
+        const scrollSpeed = 1; // Adjust scroll speed as needed
+  
+        function scroll() {
+          container.scrollLeft += scrollSpeed;
+          if (container.scrollLeft >= scrollContent.scrollWidth) {
+            container.scrollLeft = 0;
+          }
+          requestAnimationFrame(scroll);
+        }
+        scroll();
+      }
+    }
+  
+    window.addEventListener('resize', startScroll);
+    startScroll();
+  });
+  </script>
+  
 
 <div>
   <header class="mx-auto grid grid-cols-6 container px-2">
