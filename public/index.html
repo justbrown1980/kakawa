@@ -24,8 +24,7 @@
 
 
   <div class="bg-black whitespace-nowrap overflow-hidden py-2 text-sm">
-    <header class="container flex justify-between items-center text-white mx-auto w-full max-w-[1360] container--large">
-
+    <header class="container flex justify-between items-center text-white mx-auto max-w-[1360px] container--large">
       <div class="flex items-center">
         <svg class="size-5 mr-2" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -44,10 +43,8 @@
         </svg>
         <span>Free Shipping Over $150</span>
       </div>
-
-
+  
       <div class="flex items-center">
-
         <svg class="size-5 mr-2" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M10.1328 16.9997C9.45321 16.9997 8.9023 16.4484 8.9023 15.7684C8.9023 15.0883 9.45321 14.537 10.1328 14.537C10.8124 14.537 11.3633 15.0883 11.3633 15.7684C11.3633 16.4484 10.8124 16.9997 10.1328 16.9997Z"
@@ -69,7 +66,7 @@
         </svg>
         <span>Same Day & Express Delivery Available</span>
       </div>
-
+  
       <div class="flex items-center">
         <span class="icon">
           <svg class="size-5 mr-2" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,9 +82,8 @@
           </svg>
         </span> <span>Click & Collect</span>
       </div>
-
+  
       <div class="flex items-center">
-
         <svg class="size-5 mr-2" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M7.40039 0.5V4.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
           <path d="M8.90039 11H11.4004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -100,62 +96,29 @@
         </svg>
         <span>Delivery Australia Wide</span>
       </div>
+    </header>
   </div>
-
-  </header>
-  </div>
-
-
-
-  <div id="animated-text-strip">
-    <span class="marquee">Text length has to be equal&nbsp;</span>
-    <span class="marquee">Text length has to be equal&nbsp;</span>
-    <span class="marquee">Text length has to be equal&nbsp;</span>
-  </div>
-
-
+  
   <style>
-    /* Core functionality */
-#animated-text-strip{
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  overflow: hidden;
-}
-#animated-text-strip .marquee {
-  white-space: nowrap;
-  animation: marquee 5s linear infinite;
-  max-width: none;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translate(0, 0);
+  @media (max-width: 1024px) {
+    .container--large {
+      display: flex;
+      gap: 2rem;
+      animation: scroll 15s linear infinite;
+      white-space: nowrap;
+    }
+  
+    @keyframes scroll {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
   }
-  100% {
-    transform: translate(-100%, 0);
-  }
-}
-
-/* Styles for the sake of the demonstration */
-#animated-text-strip{
-  background:black;
-  padding: 1rem 0;
-}
-.marquee{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: white;
-}
   </style>
-
-
-
-
-
-
-
+  
+  
 </body>
 </html>
