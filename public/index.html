@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,136 +9,103 @@
   <link rel="stylesheet" href="/build/tailwind.css">
   <title>Kakawa Chocolates</title>
 </head>
+
 <body class="antialiased font-sans">
 
   <!-- Active Breakpoint Indicator -->
-<div class="fixed top-0 right-0 m-8 p-3 text-xs font-mono text-white h-6 w-6 rounded-full flex items-center justify-center bg-gray-700 sm:bg-pink-500 md:bg-orange-500 lg:bg-green-500 xl:bg-blue-500">
-  <div class="block  sm:hidden md:hidden lg:hidden xl:hidden">al</div>
-  <div class="hidden sm:block  md:hidden lg:hidden xl:hidden">sm</div>
-  <div class="hidden sm:hidden md:block  lg:hidden xl:hidden">md</div>
-  <div class="hidden sm:hidden md:hidden lg:block  xl:hidden">lg</div>
-  <div class="hidden sm:hidden md:hidden lg:hidden xl:block">xl</div>
-</div>
+  <div
+    class="fixed top-0 right-0 m-8 p-3 text-xs font-mono text-white h-6 w-6 rounded-full flex items-center justify-center bg-gray-700 sm:bg-pink-500 md:bg-orange-500 lg:bg-green-500 xl:bg-blue-500">
+    <div class="block  sm:hidden md:hidden lg:hidden xl:hidden">al</div>
+    <div class="hidden sm:block  md:hidden lg:hidden xl:hidden">sm</div>
+    <div class="hidden sm:hidden md:block  lg:hidden xl:hidden">md</div>
+    <div class="hidden sm:hidden md:hidden lg:block  xl:hidden">lg</div>
+    <div class="hidden sm:hidden md:hidden lg:hidden xl:block">xl</div>
+  </div>
 
 
-<div class="bg-black whitespace-nowrap overflow-hidden py-2 text-sm">
-  <div class="container flex justify-between items-center text-white mx-auto w-full max-w-[1360] desktop-only container--large">
-
-      <div class="flex items-center">
-          <svg class="size-5 mr-2" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11.3984 3.10004H15.2984C15.988 3.10004 16.6493 3.37396 17.1369 3.86156C17.6245 4.34915 17.8984 5.01047 17.8984 5.70003V10.9H15.9484" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M2.3004 10.9H1.0004V1.8C1.0004 1.45522 1.13737 1.12456 1.38116 0.880761C1.62496 0.636964 1.95562 0.5 2.3004 0.5H10.1004C10.4452 0.5 10.7758 0.636964 11.0196 0.880761C11.2634 1.12456 11.4004 1.45522 11.4004 1.8V9.18399" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M10.7461 10.9H7.4961" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M13.3492 13.5C11.9133 13.5 10.7492 12.336 10.7492 10.9C10.7492 9.46411 11.9133 8.30005 13.3492 8.30005C14.7852 8.30005 15.9492 9.46411 15.9492 10.9C15.9492 12.336 14.7852 13.5 13.3492 13.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M4.89805 13.5C3.46211 13.5 2.29805 12.336 2.29805 10.9C2.29805 9.46411 3.46211 8.30005 4.89805 8.30005C6.33399 8.30005 7.49805 9.46411 7.49805 10.9C7.49805 12.336 6.33399 13.5 4.89805 13.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-          <span>Free Shipping Over $150</span>
-      </div>
- 
+  <div class="bg-black whitespace-nowrap overflow-hidden py-2 text-sm">
+    <header class="container flex justify-between items-center text-white mx-auto w-full max-w-[1360] container--large">
 
       <div class="flex items-center">
-           
-      <svg class="size-5 mr-2" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10.1328 16.9997C9.45321 16.9997 8.9023 16.4484 8.9023 15.7684C8.9023 15.0883 9.45321 14.537 10.1328 14.537C10.8124 14.537 11.3633 15.0883 11.3633 15.7684C11.3633 16.4484 10.8124 16.9997 10.1328 16.9997Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M4.58982 16.9997C3.91024 16.9997 3.35933 16.4484 3.35933 15.7684C3.35933 15.0883 3.91024 14.537 4.58982 14.537C5.2694 14.537 5.82031 15.0883 5.82031 15.7684C5.82031 16.4484 5.2694 16.9997 4.58982 16.9997Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M7.20028 4.73584C7.38911 3.97679 7.7559 3.27365 8.27028 2.68465C8.78467 2.09564 9.43185 1.63771 10.1583 1.34875C10.8847 1.05979 11.6694 0.948114 12.4475 1.02297C13.2256 1.09783 13.9747 1.35707 14.6328 1.77923C15.2909 2.20139 15.839 2.77432 16.2318 3.45061C16.6247 4.12689 16.8509 4.88707 16.8917 5.66823C16.9326 6.44938 16.7869 7.22904 16.4668 7.94265C16.1466 8.65627 15.6613 9.28333 15.0508 9.77192" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M11.9746 5.94249L10.1289 4.09552" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M9.51359 12.0868V10.8555H11.3593C12.012 10.8555 12.638 11.1149 13.0995 11.5768C13.561 12.0386 13.8203 12.665 13.8203 13.3181V15.7807" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M0.898281 15.7684V9.61181C0.898281 9.28524 1.02792 8.97205 1.25868 8.74114C1.48945 8.51022 1.80243 8.38049 2.12877 8.38049H8.28123C8.60757 8.38049 8.92055 8.51022 9.15132 8.74114C9.38208 8.97205 9.51172 9.28524 9.51172 9.61181V12.0744" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+        <svg class="size-5 mr-2" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.3984 3.10004H15.2984C15.988 3.10004 16.6493 3.37396 17.1369 3.86156C17.6245 4.34915 17.8984 5.01047 17.8984 5.70003V10.9H15.9484"
+            stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path
+            d="M2.3004 10.9H1.0004V1.8C1.0004 1.45522 1.13737 1.12456 1.38116 0.880761C1.62496 0.636964 1.95562 0.5 2.3004 0.5H10.1004C10.4452 0.5 10.7758 0.636964 11.0196 0.880761C11.2634 1.12456 11.4004 1.45522 11.4004 1.8V9.18399"
+            stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M10.7461 10.9H7.4961" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path
+            d="M13.3492 13.5C11.9133 13.5 10.7492 12.336 10.7492 10.9C10.7492 9.46411 11.9133 8.30005 13.3492 8.30005C14.7852 8.30005 15.9492 9.46411 15.9492 10.9C15.9492 12.336 14.7852 13.5 13.3492 13.5Z"
+            stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path
+            d="M4.89805 13.5C3.46211 13.5 2.29805 12.336 2.29805 10.9C2.29805 9.46411 3.46211 8.30005 4.89805 8.30005C6.33399 8.30005 7.49805 9.46411 7.49805 10.9C7.49805 12.336 6.33399 13.5 4.89805 13.5Z"
+            stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
         </svg>
- <span>Same Day & Express Delivery Available</span>
+        <span>Free Shipping Over $150</span>
+      </div>
+
+
+      <div class="flex items-center">
+
+        <svg class="size-5 mr-2" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10.1328 16.9997C9.45321 16.9997 8.9023 16.4484 8.9023 15.7684C8.9023 15.0883 9.45321 14.537 10.1328 14.537C10.8124 14.537 11.3633 15.0883 11.3633 15.7684C11.3633 16.4484 10.8124 16.9997 10.1328 16.9997Z"
+            stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path
+            d="M4.58982 16.9997C3.91024 16.9997 3.35933 16.4484 3.35933 15.7684C3.35933 15.0883 3.91024 14.537 4.58982 14.537C5.2694 14.537 5.82031 15.0883 5.82031 15.7684C5.82031 16.4484 5.2694 16.9997 4.58982 16.9997Z"
+            stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path
+            d="M7.20028 4.73584C7.38911 3.97679 7.7559 3.27365 8.27028 2.68465C8.78467 2.09564 9.43185 1.63771 10.1583 1.34875C10.8847 1.05979 11.6694 0.948114 12.4475 1.02297C13.2256 1.09783 13.9747 1.35707 14.6328 1.77923C15.2909 2.20139 15.839 2.77432 16.2318 3.45061C16.6247 4.12689 16.8509 4.88707 16.8917 5.66823C16.9326 6.44938 16.7869 7.22904 16.4668 7.94265C16.1466 8.65627 15.6613 9.28333 15.0508 9.77192"
+            stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M11.9746 5.94249L10.1289 4.09552" stroke="white" stroke-linecap="round" stroke-linejoin="round">
+          </path>
+          <path
+            d="M9.51359 12.0868V10.8555H11.3593C12.012 10.8555 12.638 11.1149 13.0995 11.5768C13.561 12.0386 13.8203 12.665 13.8203 13.3181V15.7807"
+            stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path
+            d="M0.898281 15.7684V9.61181C0.898281 9.28524 1.02792 8.97205 1.25868 8.74114C1.48945 8.51022 1.80243 8.38049 2.12877 8.38049H8.28123C8.60757 8.38049 8.92055 8.51022 9.15132 8.74114C9.38208 8.97205 9.51172 9.28524 9.51172 9.61181V12.0744"
+            stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        <span>Same Day & Express Delivery Available</span>
       </div>
 
       <div class="flex items-center">
-        <span class="icon">        
+        <span class="icon">
           <svg class="size-5 mr-2" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.90234 8.5V13C1.90234 13.1326 1.95502 13.2598 2.04879 13.3536C2.14256 13.4473 2.26974 13.5 2.40234 13.5H12.4023C12.535 13.5 12.6621 13.4473 12.7559 13.3536C12.8497 13.2598 12.9023 13.1326 12.9023 13V8.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M13.4004 6.00002H1.40039C1.26778 6.00002 1.14061 5.94735 1.04684 5.85358C0.953069 5.75981 0.900391 5.63263 0.900391 5.50002V3.50002L2.12039 1.05002C2.20425 0.883589 2.33296 0.7439 2.49198 0.646718C2.65101 0.549536 2.83403 0.498727 3.02039 0.500024H11.7804C11.9668 0.498727 12.1498 0.549536 12.3088 0.646718C12.4678 0.7439 12.5965 0.883589 12.6804 1.05002L13.9004 3.50002V5.50002C13.9004 5.63263 13.8477 5.75981 13.7539 5.85358C13.6602 5.94735 13.533 6.00002 13.4004 6.00002Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path
+              d="M1.90234 8.5V13C1.90234 13.1326 1.95502 13.2598 2.04879 13.3536C2.14256 13.4473 2.26974 13.5 2.40234 13.5H12.4023C12.535 13.5 12.6621 13.4473 12.7559 13.3536C12.8497 13.2598 12.9023 13.1326 12.9023 13V8.5"
+              stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path
+              d="M13.4004 6.00002H1.40039C1.26778 6.00002 1.14061 5.94735 1.04684 5.85358C0.953069 5.75981 0.900391 5.63263 0.900391 5.50002V3.50002L2.12039 1.05002C2.20425 0.883589 2.33296 0.7439 2.49198 0.646718C2.65101 0.549536 2.83403 0.498727 3.02039 0.500024H11.7804C11.9668 0.498727 12.1498 0.549536 12.3088 0.646718C12.4678 0.7439 12.5965 0.883589 12.6804 1.05002L13.9004 3.50002V5.50002C13.9004 5.63263 13.8477 5.75981 13.7539 5.85358C13.6602 5.94735 13.533 6.00002 13.4004 6.00002Z"
+              stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
             <path d="M8.40234 8.5V13.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
             <path d="M1.90234 10H8.40234" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
             <path d="M0.900391 3.5H13.9004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
+          </svg>
         </span> <span>Click & Collect</span>
       </div>
 
       <div class="flex items-center">
-         
-          <svg class="size-5 mr-2" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.40039 0.5V4.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M8.90039 11H11.4004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M0.900391 4.5H13.9004V12.5C13.9004 12.7652 13.795 13.0196 13.6075 13.2071C13.42 13.3946 13.1656 13.5 12.9004 13.5H1.90039C1.63517 13.5 1.38082 13.3946 1.19328 13.2071C1.00575 13.0196 0.900391 12.7652 0.900391 12.5V4.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M0.900391 4.5L2.40039 1.61C2.5621 1.28427 2.80956 1.0088 3.11615 0.813215C3.42274 0.617632 3.77685 0.509344 4.14039 0.5H10.6604C11.0325 0.500197 11.3971 0.604188 11.7133 0.800279C12.0296 0.996371 12.2848 1.27679 12.4504 1.61L13.9004 4.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-<span>Delivery Australia Wide</span>
+
+        <svg class="size-5 mr-2" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.40039 0.5V4.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M8.90039 11H11.4004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path
+            d="M0.900391 4.5H13.9004V12.5C13.9004 12.7652 13.795 13.0196 13.6075 13.2071C13.42 13.3946 13.1656 13.5 12.9004 13.5H1.90039C1.63517 13.5 1.38082 13.3946 1.19328 13.2071C1.00575 13.0196 0.900391 12.7652 0.900391 12.5V4.5Z"
+            stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path
+            d="M0.900391 4.5L2.40039 1.61C2.5621 1.28427 2.80956 1.0088 3.11615 0.813215C3.42274 0.617632 3.77685 0.509344 4.14039 0.5H10.6604C11.0325 0.500197 11.3971 0.604188 11.7133 0.800279C12.0296 0.996371 12.2848 1.27679 12.4504 1.61L13.9004 4.5"
+            stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        <span>Delivery Australia Wide</span>
       </div>
 
 
 
   </div>
-  
+
+  </header>
   </div>
-</div>
-
-<style>
-  
- .desktop-only {
-    display: flex;
-  }
-
-  .mobile-only {
-    display: none;
-  }
-
-  @media (max-width: 880px) {
-    .desktop-only {
-      display: none;
-    }
-
-    .mobile-only {
-      display: flex;
-    }
-
-    .marquee-content {
-      display: flex;
-      align-items: center;
-      animation: marquee 60s linear infinite; /* Adjust this value if needed */
-      color: #fff;
-    }
-
-  
-    @keyframes marquee {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
-    }
-
-   
-  }
-</style>
-
-
-<header></header>
-
-
-
-
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    function applyMarqueeSpeed() {
-      if (window.innerWidth <= 880) {
-        const marquee = document.querySelector('.marquee-content');
-        const contentWidth = marquee.scrollWidth / 2;
-        const duration = contentWidth / 20; // Adjust the divisor for slower scroll speed
-        marquee.style.animationDuration = `${duration}s`;
-      }
-    }
-
-    applyMarqueeSpeed(); // Call it initially to apply the changes based on the current screen size
-
-    window.addEventListener('resize', applyMarqueeSpeed); // Call it on resize to apply changes dynamically
-  });
-</script>
-
-
 </body>
 </html>
